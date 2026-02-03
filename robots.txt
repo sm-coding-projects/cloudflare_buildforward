@@ -1,15 +1,19 @@
 User-agent: *
 Allow: /
 Disallow: /photos/studio/
-Disallow: /photos/Beldale/
-Disallow: /photos/Pilaster/
-Disallow: /photos/Wallangarra/
+
+# Allow search engines to index project photos
+Allow: /photos/Beldale/
+Allow: /photos/Pilaster/
+Allow: /photos/Wallangarra/
 
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Slurp
 Allow: /
