@@ -4,9 +4,11 @@
       eyebrow="Established 2020"
       title="About Build Forward Homes"
       :lead="aboutContent.intro"
-      :image="aboutContent.image"
-      image-alt="Build Forward Homes studio mark"
-      image-caption="Build Forward Homes"
+      :image="aboutHeroProject.heroImage"
+      :image-srcset="aboutHeroProject.heroSrcset"
+      :image-webp-srcset="aboutHeroProject.heroWebpSrcset"
+      :image-alt="`${aboutHeroProject.title} home design in ${aboutHeroProject.location}`"
+      :image-caption="`${aboutHeroProject.title}, ${aboutHeroProject.location}`"
       primary-href="/projects"
       primary-label="View projects"
       secondary-href="/contact"
@@ -31,7 +33,10 @@
 </template>
 
 <script setup lang="ts">
+import { projects } from '~/data/projects'
 import { aboutContent, siteSettings } from '~/data/site'
+
+const aboutHeroProject = projects.find((project) => project.slug === 'beldale') || projects[0]
 
 useSeoMeta({
   title: siteSettings.seo.about.title,

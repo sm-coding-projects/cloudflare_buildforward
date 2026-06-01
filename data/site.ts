@@ -81,8 +81,7 @@ export const aboutContent = {
     'At Build Forward, we transform visions into reality with a unique blend of modern design and functional living. Our team is dedicated to delivering projects that exemplify quality, innovation, and client satisfaction.',
   philosophy:
     'Design should be both striking and effortless to live in. We prioritise craftsmanship, materials, and the lasting details that elevate daily life.',
-  establishedLine: 'Established 2020 - Greater Sydney, Blue Mountains, Illawarra and the Central Coast',
-  image: '/photos/studio/2.gif'
+  establishedLine: 'Established 2020 - Greater Sydney, Blue Mountains, Illawarra and the Central Coast'
 }
 
 // Editable process copy. Replace these fields with Storyblok page content when the CMS is connected.
