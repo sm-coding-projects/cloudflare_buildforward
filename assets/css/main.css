@@ -780,8 +780,8 @@ h3 {
 .project-detail-hero {
   container-type: inline-size;
   display: grid;
-  grid-template-columns: minmax(0, 0.7fr) minmax(320px, 0.9fr);
-  gap: 3rem;
+  grid-template-columns: minmax(0, 0.92fr) minmax(340px, 0.78fr);
+  gap: clamp(2rem, 4vw, 4rem);
   align-items: end;
   padding: 10rem 0 4rem;
 }
@@ -793,6 +793,19 @@ h3 {
 
 .project-detail-hero p:not(.eyebrow) {
   color: var(--c-muted);
+}
+
+.project-detail-hero__title {
+  max-width: 100%;
+  font-size: clamp(3.2rem, 7.3cqi, 5.45rem);
+}
+
+.project-detail-hero__title .text-reveal__mask {
+  max-width: 100%;
+}
+
+.project-detail-hero__title .text-reveal__word {
+  white-space: normal;
 }
 
 .project-detail-hero .image-reveal {
@@ -1148,6 +1161,10 @@ h3 {
   .project-detail-hero,
   .page-hero {
     padding-top: 7.5rem;
+  }
+
+  .project-detail-hero__title {
+    font-size: clamp(2.75rem, 17cqi, 4.2rem);
   }
 
   .project-facts {

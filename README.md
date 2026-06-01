@@ -42,16 +42,18 @@ Use Cloudflare Pages as a static Nuxt deployment:
 
 ```text
 Build command: npm run generate
-Build output directory: .output/public
+Build output directory: dist
 Environment variable: NODE_VERSION=22
 ```
+
+The repository includes `wrangler.jsonc` with `pages_build_output_dir` set to `./dist`. Nuxt uses the Cloudflare Pages static preset during the Cloudflare build, and that preset writes the generated site to `dist`.
 
 Manual CLI deploy:
 
 ```bash
 npm install
 npm run generate
-npx wrangler pages deploy .output/public --project-name=build-forward-homes
+npx wrangler pages deploy dist --project-name=cloudflare-buildforward
 ```
 
 ## Content

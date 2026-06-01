@@ -4,7 +4,7 @@
       <div>
         <NuxtLink class="text-link" to="/projects">Projects</NuxtLink>
         <p class="eyebrow">{{ project.location }}</p>
-        <TextReveal id="project-title" as="h1" :text="project.title" />
+        <TextReveal id="project-title" as="h1" :text="project.title" class-name="project-detail-hero__title" />
         <p>{{ project.description }}</p>
       </div>
       <ImageReveal
