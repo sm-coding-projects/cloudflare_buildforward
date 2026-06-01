@@ -1,6 +1,9 @@
 export default defineNuxtConfig({
   ssr: true,
   devtools: { enabled: false },
+  experimental: {
+    appManifest: false
+  },
   css: ['~/assets/css/main.css'],
   app: {
     head: {
